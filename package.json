@@ -1,0 +1,29 @@
+{
+  "name": "redis-session-demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-redis": "^4.0.4",
+    "debug": "^4.1.1",
+    "express": "~4.17.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.7.3",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.4",
+    "random-int": "^2.0.1",
+    "redis": "^3.0.2",
+    "request": "^2.88.2",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

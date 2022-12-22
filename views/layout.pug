@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= 'Hi Redis'
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/jquery-3.4.1.slim.min.js')
+    script(src='/javascripts/bootstrap.bundle.min.js')
+  body.text-center
+    div.cover-container.d-flex.h-100.p-3.mx-auto.flex-column
+      header.masthead.mb-auto 
+        .inner
+          h3.masthead-brand Hi Redis
+          nav.nav.nav-masthead.justify-content-center
+            a.nav-link(href='/') Generate Beer Name
+            a.nav-link(href='/repos') Redis in caching
+            a.nav-link(href='/login') Log In
+            a.nav-link(href='/logout') Log Out
+
+      main.inner.cover(role='main')
+        block content
+      footer.mastfoot.mt-auto
+        .inner
+          p= "The use of Redis in session store and caching"
+    
+

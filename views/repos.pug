@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= "Get the number of repositories"
+  .lead
+    form#login-form(action='/repos', method='post')
+      .form-group
+        input(name='username', type='text', placeholder='Input Github username', required='')
+      if repos_result
+        p= repos_result
+      button.btn.btn-primary(type='submit')= 'GET'
+    if error
+      p= error
+  h1= "Get user email's company"
+  .lead
+    form#login-form(action='/getemail', method='post')
+      .form-group
+        input(name='userid', type='text', placeholder='Input userid', required='')
+      if email_result
+        p= email_result
+      button.btn.btn-primary(type='submit')= 'GET'
+    if email_error
+      p= email_error
