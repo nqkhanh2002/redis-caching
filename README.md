@@ -1,11 +1,11 @@
-# redis-demo overview
+# Redis Caching Demo 
 Demo app that shows session & cache management for a Node.js app using express-sessions and connect-redis.
 
 Session: The app queries an API for ML-generated craft beer names and displays them on the page. There is a session management panel that displays session ID, time until the session expires, and the number of beer names viewed in that session. 
 
 Cache: The app fetch/query data and save it to redis for caching.
 
-# how to run
+# How to Run
 
 Make sure you have have Redis server running locally (and mysqld):
 
@@ -24,4 +24,7 @@ npm run dev
 Then in your browser, go to http://localhost:3000. It should look something like this:
 
 ![screenshot](screenshot.png)
-
+# Author
+* Nguyen Quoc Khanh - 20521452
+* Le Tien Tuan Vu - 20522164
+* Nguyen Minh Khoi - 20521479
